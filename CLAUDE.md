@@ -110,3 +110,9 @@ Production deployment via Docker Compose with services for MySQL, Redis, backend
 - Both projects have ESLint configuration with TypeScript support
 - Pre-commit hooks configured for code formatting and linting
 - API endpoints follow RESTful conventions with `/api/` prefix
+
+## 重要！！！
+如果遇到安装依赖有网络连接问题， 使用代理：
+$Env:https_proxy = "http://127.0.0.1:33210"
+$Env:http_proxy = "http://127.0.0.1:33210"
+$Env:all_proxy = "socks5://127.0.0.1:33211"

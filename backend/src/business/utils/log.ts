@@ -32,6 +32,7 @@ export const filterModule = (menus: RouteType[], ctx: Context): { title: string;
 
   // 系统模块判断
   function forMenus(menuList: RouteType[]) {
+    if (!menuList || !Array.isArray(menuList)) return;
     menuList.forEach((menu) => {
       if (menu.children) {
         forMenus(menu.children);
